@@ -40,64 +40,81 @@ img {
         margin-right: auto;
       }
 
-      .card__hearder--subtitle {
+      p {
         color: red;
         font-weight: 300;
+        font-size: 1.2rem;
       }
     }
   }
 
-  .card__body > .card__top figure {
+  .card__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
 
-    img {
-      border: #fdeb00;
-      border-style: solid;
-      border-width: 0.25rem;
-    }
-
-    figcaption {
-      background: linear-gradient(to right, #fdeb00, #79751d);
-      font-size: 0.7rem;
-      font-style: italic;
-      padding: 0.125rem 0.8rem;
-    }
-  }
-
-  .card__body .card__attack {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 3rem 0;
-
-    .card__type {
+    .card__top {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      gap: 0.25rem;
+
+      figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+
+        img {
+          border: 0.25rem solid #fdeb00;
+        }
+
+        figcaption {
+          background: linear-gradient(to right, #fdeb00, #79751d);
+          font-size: 0.7rem;
+          font-style: italic;
+          padding: 0.125rem 0.8rem;
+        }
+      }
     }
 
-    .card__text p {
-      font-size: 0.7rem;
-    }
-  }
+    .card__attack {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 3rem 0;
 
-  .card__attack {
-    p:last-child {
-      font-weight: bolder;
-      font-size: 1.4rem;
-    }
-  }
+      .card__type {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-  .card__attack .card__text strong {
-    font-weight: bolder;
-    font-size: 1.2rem;
+      .card__text {
+        flex: 1;
+
+        p {
+          font-size: 0.7rem;
+
+          &:last-child {
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          strong {
+            font-weight: bolder;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
   }
 
   .card__footer {
@@ -109,7 +126,6 @@ img {
       flex-direction: row;
       justify-content: space-between;
       align-items: start;
-
       border-top: 2px solid #000;
 
       li {
@@ -129,9 +145,7 @@ img {
       font-size: 0.7rem;
       font-weight: 500;
       padding: 0.15rem 0.5rem;
-      border-color: #fdeb00;
-      border-style: solid;
-      border-width: 0.2rem;
+      border: 0.2rem solid #fdeb00;
       margin-top: 0.2rem;
     }
   }

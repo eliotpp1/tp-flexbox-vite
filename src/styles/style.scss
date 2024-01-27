@@ -1,5 +1,11 @@
 @import "vendors/reset.scss";
 
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

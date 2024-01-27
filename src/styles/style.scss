@@ -24,26 +24,26 @@ img {
   .card__header {
     display: flex;
     flex-direction: column;
-  }
 
-  .card__header > p {
-    font-size: 0.6rem;
-  }
-
-  .card__header--title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.25rem;
-
-    h1 {
-      font-weight: 900;
-      margin-right: auto;
+    p {
+      font-size: 0.6rem;
     }
 
-    .card__hearder--subtitle {
-      color: red;
-      font-weight: 300;
+    .card__header--title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.25rem;
+
+      h1 {
+        font-weight: 900;
+        margin-right: auto;
+      }
+
+      .card__hearder--subtitle {
+        color: red;
+        font-weight: 300;
+      }
     }
   }
 
